@@ -27,6 +27,12 @@ function Layout(props) {
             <li>
               {" "}
               <Link className="nav-links" to="/contact">
+                Resume
+              </Link>{" "}
+            </li>
+            <li>
+              {" "}
+              <Link className="nav-links" to="/contact">
                 Contact
               </Link>{" "}
             </li>

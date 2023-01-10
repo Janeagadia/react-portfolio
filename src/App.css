@@ -10,13 +10,13 @@ body {
   background-color: black;
 }
 .main {
-  font-family: clean-ui, sans-serif;
+  font-family: Oxanium, sans-serif;
 }
 
 h1 {
   color: white;
   font-size: 3rem;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 .header-container {
   background-color: rgba(0, 0, 0, 0.418);
@@ -34,7 +34,7 @@ h1 {
   list-style: none;
   display: flex;
   text-decoration: none;
-  gap: 2rem;
+  gap: 3rem;
 }
 .nav-links {
   text-decoration: none;
@@ -53,7 +53,8 @@ h1 {
   height: auto;
 }
 .project-page {
-  padding-bottom: 10rem;
+  margin: 4rem auto;
+  padding: 2rem 2rem 10rem 2rem;
 }
 .role-text {
   font-size: 5rem;
@@ -103,9 +104,7 @@ h1 {
 .btn button:hover::before {
   left: 0;
 }
-.project-page {
-  padding: 0, 4rem, 0rem, 4rem;
-}
+
 .project-container {
   display: flex;
   flex-wrap: wrap;
@@ -120,10 +119,56 @@ h1 {
   background-color: #fff;
   border-radius: 0.5rem;
   overflow: hidden;
+  background-color: black;
 }
 .project img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  opacity: 0.8;
   /* object-position: calc(-5rem); */
+}
+.project-description {
+  background-color: rgba(0, 0, 0, 0.699);
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.project:hover .project-description {
+  font-size: 1.6rem;
+  transform: translateY(-102%);
+  transition: all ease-in-out 0.6s;
+  /* transition: all step-end 0.2s; */
+}
+.project-description-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.project-description-text {
+  font-size: 1.2rem;
+}
+/* .project-description-tools {
+  display: flex;
+  background-color: aqua;
+  gap: 2rem;
+} */
+.contact-page {
+  width: 80rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.contact-icons ul {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+  margin-top: 2rem;
+  opacity: 0.8;
 }

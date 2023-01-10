@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 function Projects() {
   return (
     <div className="pages project-page">
-      My Projects
+      <h1>My Projects</h1>
+      <h3>Some projects I've worked on:</h3>
       <div className="project-container">{ProjectData}</div>
       <div className="link-div">
         <Link to="/contact">
