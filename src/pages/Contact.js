@@ -14,17 +14,45 @@ function Contact() {
         <ul>
           <li>
             {" "}
-            <i class="linkedin icon large "></i>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/jane-agadia"
+              alt="linkedin"
+            >
+              <i className="linkedin icon large "></i>
+            </a>
           </li>
           <li>
-            <i class="instagram icon large "></i>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://api.whatsapp.com/message/JVOKBIKMBAITH1?autoload=1&app_absent=0"
+              alt="whatsapp"
+            >
+              <i className="whatsapp icon large"></i>
+            </a>
           </li>
           <li>
-            <i class="twitter icon large"></i>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/Agadiateejay?t=0qwgpiHLzrkPqLFzvFQAw&s=08"
+              alt="twiter"
+            >
+              <i className="twitter icon large"></i>
+            </a>
           </li>
 
           <li>
-            <i class="github icon large"></i>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/Janeagadia"
+              alt="github"
+            >
+              <i className="github icon large"></i>
+            </a>
           </li>
         </ul>
       </div>

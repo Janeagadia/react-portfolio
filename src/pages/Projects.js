@@ -6,7 +6,7 @@ function Projects() {
   return (
     <div className="pages project-page">
       <h1>My Projects</h1>
-      <h3>Some projects I've worked on:</h3>
+
       <div className="project-container">{ProjectData}</div>
       <div className="link-div">
         <Link to="/contact">

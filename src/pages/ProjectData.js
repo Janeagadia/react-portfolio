@@ -8,6 +8,7 @@ import image6 from "../asset/jauit screenshot.PNG";
 
 const projectDataDetails = [
   {
+    index: 0,
     title: "Bito-Naturals Homepage",
     image: image1,
     link: "https://bito-homepage.netlify.app/",
@@ -15,14 +16,16 @@ const projectDataDetails = [
     tools: ["HTML5", "CSS3", "JavaScript", "Gulp"],
   },
   {
+    index: 1,
     title: "Bito-Naturals Dashboard",
     image: image2,
-    link: "https://bito-login.netlify.app/dashboard.html",
+    link: "https://bito-login.netlify.app",
     description:
       " The dashboard of Bito natural site when a user signs up and sign in ",
     tools: ["HTML5", "CSS3", "JavaScript", "Gulp"],
   },
   {
+    index: 2,
     title: "Jubilee Hotels",
     image: image3,
     link: "https://jubileehotels.netlify.app/",
@@ -30,13 +33,15 @@ const projectDataDetails = [
     tools: ["HTML5", "CSS3", "JavaScript", "Gulp"],
   },
   {
+    index: 3,
     title: "Omnifood Homepage",
     image: image4,
     link: "https://omnifood.dev/",
     description: " A site for ordering food ",
-    tools: ["HTML5", "CSS3", "JavaScript", "Gulp"],
+    tools: ["HTML5", "CSS3", "JavaScript"],
   },
   {
+    index: 4,
     title: "Nigeria Recipes",
     image: image5,
     link: "https://nigeriantastydelicacies.netlify.app/",
@@ -45,6 +50,7 @@ const projectDataDetails = [
   },
 
   {
+    index: 5,
     title: "Jauit Homepage",
     image: image6,
     link: "https://jauitwebsiteclone.netlify.app/",
@@ -53,26 +59,38 @@ const projectDataDetails = [
   },
 ];
 
-// const pgg = [projectDataDetails.tools];
-
-// pgg.forEach((element) => {
-//   return console.log(element);
-// });
+// console.log(projectTools);
 
 const ProjectData = projectDataDetails.map((proj) => {
+  const projectTools = projectDataDetails.map((p, i) => {
+    const too = p.tools.map((tool) => {
+      if (p.index === proj.index) {
+        return (
+          <div key={tool} className="tool-items">
+            {tool}
+          </div>
+        );
+      }
+    });
+
+    return too;
+  });
   return (
     <div key={proj.title} className="project">
       {" "}
-      <a target="_blank" rel="noopener noreferrer" href={proj.link}>
+      <div>
         <img src={proj.image} alt={proj.title} />{" "}
-      </a>
-      <div className="project-description">
+      </div>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href={proj.link}
+        className="project-description"
+      >
         <div className="project-description-title">{proj.title}</div>
         <div className="project-description-text">{proj.description}</div>
-        <div className="project-description-tools">
-          {/* {projectDescriptionTools} */}
-        </div>
-      </div>
+        <div className="project-description-tools">{projectTools}</div>
+      </a>
     </div>
   );
 });
