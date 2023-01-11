@@ -1,4 +1,5 @@
 import "./App.css";
+import "./Queries.css";
 import Layout from "./layout/Layout";
 import HomePage from "./pages/Home";
 import Projects from "./pages/Projects";

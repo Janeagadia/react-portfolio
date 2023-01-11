@@ -57,7 +57,9 @@ function Contact() {
         </ul>
       </div>
       <div className="link-div">
-        <Button text="Contact me " />
+        <a href="mailto:janeagadiabiz@gmail.com">
+          <Button text="Contact me " />
+        </a>
       </div>
     </div>
   );

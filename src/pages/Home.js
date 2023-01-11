@@ -7,7 +7,7 @@ function HomePage() {
       {/* <h1>ABOUT ME</h1> */}
       <h1>Hello! I'm Jane Agadia, </h1>
       <p className="role-text">A Front-end Developer.</p>
-      <p>
+      <p className="homepage-text">
         I enjoy creating interactive websites and applications.
         <br /> I also enjoy teaching, smart conversations and connecting with
         people.
